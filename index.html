@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    
+    <title>Patika Katılımcı Formu</title>
+    <style type="text/css">
+        input:focus,select:focus{ outline:none}
+
+
+
+body{ font:12px tahoma}
+.form1{ width:610px; height:450px; margin:60px auto; background:url(images/formarka.jpg) no-repeat; padding:100px 0 0 40px}
+td{ height:30px}
+#dugme{ width:120px; height:30px; border:2px solid #9d3a56; background:#933; border-radius:3px; color:#fff; font-weight:bold}
+#dugme:hover{ border-color:#9b4562; background:#72273c}
+#ad,#soyad,#kadi,#parola,#mail,#girilenkod{ width:175px; height:25px; border:1px solid #bbb; color:#ababab; background:#fff; border-radius:3px; padding:0 0 0 2px}
+#gun,#ay{ width:50px; height:25px; color:#000; border:1px solid #999; background:#FFF; border-radius:3px;}
+#yil,#dyeri{ width:100px; height:25px; color:#000; border:1px solid #999; background:#FFF;border-radius:3px;}
+#uretilenkod{ width:135px; height:56px; background:url(images/guvenlik.jpg) no-repeat; font:bold 30px tahoma; color:#fff; text-align:center; border:none;
+ text-shadow:0 1px 1px #000}
+span{color:#b00; font:11px tahoma}
+
+    </style>
+
+       
+
+</head>
+<body >
+    <div class="form">
+        <form action="" method="get">
+        <table width="630" border="0">
+            <tr>
+                <h1>Patika Katılımcı Formu</h1> 
+            
+            </tr>
+          <tr>
+            <td width="180">Adı:</td>
+            <td width="270"><input name="" id="ad" value="Adınızı yazınız" " type="text" /></td>
+            <td width="180"><span id="aduyari"></span></td>
+          </tr>
+          <tr>
+            <td>Soyadı:</td>
+            <td><input   name="" id="soyad" value="Soyadınızı yazınız" " type="text" /></td>
+            <td><span id="soyaduyari"></span></td>
+          </tr>
+          
+          
+          <tr>
+            <td>E-Mail:</td>
+            <td><input name="" id="email" value="E-Mail giriniz"  /></td>
+            <td><span id="mailuyari"></span></td>
+          </tr>
+          <tr>
+            <td>Telefon:</td>
+            <td><input name="" id="tel" value="Telefonuzu yazınız" type="text" /></td>
+            <td><span id="soyaduyari"></span></td>
+          </tr>
+          <tr>
+            <td>Doğum Tarihi:</td>
+            <td><select name="" id="gun">
+              <option value="">Gün</option>
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+              <option value="04">04</option>
+              <option value="05">05</option>
+              <option value="06">06</option>
+              <option value="07">07</option>
+              <option value="08">08</option>
+              <option value="09">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+
+              
+              &nbsp;</select> 
+              
+              <select name="" id="ay">
+                <option value="">Ay</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+              <option value="06">06</option>
+              <option value="07">07</option>
+              <option value="08">08</option>
+              <option value="09">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+
+
+              </select> 
+              
+              <select name="" id="yil">
+                <option value="">Yıl</option>
+                <option value="1994">1994</option>
+                <option value="1995">1995</option>
+                <option value="1996">1996</option>
+                <option value="1998">1997</option>
+                <option value="1999">1999</option>
+              <option value="2000">2000</option>
+
+              </select></td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Mezun Olduğunuz Bölüm</td>
+            <td><select id="bolum">
+            <option value="Bilgisayar">Bilişim Teknolojileri</option>
+            <option value="Grafik">Grafik ve Fotoğraf</option>
+            <option value="Çocuk Gelişimi">Çocuk Gelişimi</option>
+            <option value="Giyim">Giyim Üretim</option>
+            </select></td>
+            </tr>
+          <tr>
+            <td>Yaşadığınız Yer:</td>
+            <td><select name="" id="yer">
+              <option value="Bursa">Bursa</option>
+              <option value="İstanbul">İstanbul</option>
+              <option value="Ankara">Ankara</option>
+              <option value="İzmir">İzmir</option>
+              <option value="Denizli">Denizli</option>
+
+            </select></td>
+            <td>&nbsp;</td>
+          </tr>
+         
+          <tr>
+            <td>&nbsp;</td>
+            <td><input name="" id="dugme" type="button" value="Gönder" onclick="getFormValues()" /></td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td align="center">
+            <textarea name="sonuc" disabled="disabled" cols="65" rows="6"></textarea>
+            </td>
+            </tr>
+        </table>
+        
+        
+        
+        </form>
+        </div>
+
+
+</body>
+       
+
+            <script src="script.js"
+            type="text/Javascript"></script>
+        
+
+</html>
